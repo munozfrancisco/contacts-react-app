@@ -8,7 +8,7 @@ Here you will see a list of contacts of "Very Importante People" in the world of
 
 ## Development Roadmap.
 
-- [ ] Prompt provisionary contacts list data set.
+- [x] Prompt provisionary contacts list data set.
 - [ ] UI layout of contacts List.
 - [ ] Implementation of "search" functionality.
 - [ ] Implementation of "delete button" functionality.
