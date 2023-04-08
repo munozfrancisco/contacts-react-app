@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import ListContacts from './ListContacts'
+import React, { Component } from 'react';
+import ListContacts from './ListContacts';
 
 
 class App extends Component {
@@ -9,19 +9,19 @@ class App extends Component {
         id: 'tyler',
         name: 'Tyler McGinnis',
         handle: '@tylermcginnis',
-        avatarURL: ''
+        avatarURL: '/icons/person.svg'
       },
       {
         id: 'karen',
         name: 'Karen Isgrigg',
         handle: '@karen_isgrigg',
-        avatarURL: ''
+        avatarURL: '/icons/person.svg'
       },
       {
         id: 'richard',
         name: 'Richard Kalehoff',
         handle: '@richardkalehoff',
-        avatarURL: ''
+        avatarURL: '/icons/person.svg'
       },
     ]
   }
@@ -35,6 +35,5 @@ class App extends Component {
     )
   }
 }
-
 
 export default App;
