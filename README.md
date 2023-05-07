@@ -10,7 +10,7 @@ Here you will see a list of contacts of "Very Importante People" in the world of
 
 - [x] Prompt provisionary contacts list data set.
 - [x] UI layout of contacts List.
-- [ ] Implementation of "search" functionality.
+- [x] Implementation of "search" functionality.
 - [ ] Implementation of "delete button" functionality.
 - [ ] UI Form layout to add new contacts and its functionality.
 - [ ] Route SPA properly.
