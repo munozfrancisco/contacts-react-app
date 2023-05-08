@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom'
 
 
 class Search extends Component {
@@ -23,12 +24,16 @@ class Search extends Component {
     return (
         <div className='list-contacts-top'>
             <input
-                className="search-contacts"
-                type="text"
-                placeholder="Search contacts"
-                value={this.state.searchTerm}
-                onChange={this.handleSearch}
+              className="search-contacts"
+              type="text"
+              placeholder="Search contacts"
+              value={this.state.searchTerm}
+              onChange={this.handleSearch}
             />
+            <Link
+              to='/create'
+              className='add-contact'>
+            Add Contact</Link>
         </div>
     );
   }    

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import ListContacts from './ListContacts';
+import CreateNewContact from './CreateNewContact';
 import Search from "./Search";
-
+import { Routes, Route } from "react-router-dom";
 
 class App extends Component {
   constructor(props) {
@@ -44,11 +45,18 @@ class App extends Component {
     const displayContacts = filteredContacts.length ? filteredContacts : contacts;
     return (
       <div className='list-contacts'>
-        <Search 
-          contacts={contacts} 
-          setFilteredContacts={this.setFilteredContacts} /> 
-        <ListContacts
-          contacts={displayContacts} />
+        <Routes>
+          <Route exact path='/' element={<>
+            <Search
+              contacts={contacts}
+              setFilteredContacts={this.setFilteredContacts} />
+            <ListContacts
+                contacts={displayContacts} />
+            </>}
+          />        
+          <Route path='/create' element={<CreateNewContact/>}
+          />
+        </Routes>
       </div>
     )
   }
