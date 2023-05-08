@@ -12,8 +12,9 @@ Here you will see a list of contacts of "Very Importante People" in the world of
 - [x] UI layout of contacts List.
 - [x] Implementation of "search" functionality.
 - [ ] Implementation of "delete button" functionality.
-- [ ] UI Form layout to add new contacts and its functionality.
-- [ ] Route SPA properly.
+- [x] UI Form layout to add new contacts and its functionality.
+- [ ] Force navegation into "/" when new contact is submitted.
+- [x] Route SPA properly.
 
 
 # Getting Started with Create React App

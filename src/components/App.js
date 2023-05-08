@@ -34,10 +34,17 @@ class App extends Component {
       filteredContacts: [],
     };
     this.setFilteredContacts = this.setFilteredContacts.bind(this);
+    this.createContact = this.createContact.bind(this);
   }
   
   setFilteredContacts(filteredContacts) {
     this.setState({ filteredContacts });
+  }
+
+  createContact(contact) {
+    this.setState(prevState => ({
+      contacts: [contact, ...prevState.contacts],
+    }))
   }
 
   render() {
@@ -54,7 +61,8 @@ class App extends Component {
                 contacts={displayContacts} />
             </>}
           />        
-          <Route path='/create' element={<CreateNewContact/>}
+          <Route path='/create' 
+                 element={<CreateNewContact onCreateContact={this.createContact}/>}
           />
         </Routes>
       </div>
