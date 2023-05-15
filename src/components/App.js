@@ -5,44 +5,38 @@ import Search from "./Search";
 import { Routes, Route } from "react-router-dom";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      contacts: [
-        {
-          id: 1,
-          username: 'tyler',
-          name: 'Tyler McGinnis',
-          handle: '@tylermcginnis',
-          avatarURL: '/icons/person.svg'
-        },
-        {
-          id: 2,
-          username: "karen",
-          name: 'Karen Isgrigg',
-          handle: '@karen_isgrigg',
-          avatarURL: '/icons/person.svg'
-        },
-        {
-          id: 3,
-          username: "richard",
-          name: 'Richard Kalehoff',
-          handle: '@richardkalehoff',
-          avatarURL: '/icons/person.svg'
-        },
-      ],
-      filteredContacts: [],
-    };
-    this.setFilteredContacts = this.setFilteredContacts.bind(this);
-    this.createContact = this.createContact.bind(this);
-    this.removeContact = this.removeContact.bind(this);
-  }
+  state = {
+    contacts: [
+      {
+        id: 1,
+        username: 'tyler',
+        name: 'Tyler McGinnis',
+        handle: '@tylermcginnis',
+        avatarURL: '/icons/person.svg'
+      },
+      {
+        id: 2,
+        username: "karen",
+        name: 'Karen Isgrigg',
+        handle: '@karen_isgrigg',
+        avatarURL: '/icons/person.svg'
+      },
+      {
+        id: 3,
+        username: "richard",
+        name: 'Richard Kalehoff',
+        handle: '@richardkalehoff',
+        avatarURL: '/icons/person.svg'
+      },
+    ],
+    filteredContacts: [],
+  }; 
   
-  setFilteredContacts(filteredContacts) {
+  setFilteredContacts = (filteredContacts) => {
     this.setState({ filteredContacts });
   }
 
-  createContact(contact) {
+  createContact = (contact) => {
     this.setState(prevState => ({
       contacts: [contact, ...prevState.contacts],
     }))
@@ -54,8 +48,6 @@ class App extends Component {
         return c.id !== contact.id
       })
     }))
-
-    // ContactsAPI.remove(contact)
   }
 
   render() {
