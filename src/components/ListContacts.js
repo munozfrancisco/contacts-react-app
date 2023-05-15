@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 const ListContacts = props => { 
-    const { contacts } = props
+    const { contacts, onDeleteContact } = props
     return (
         <ol className='contact-list'>
           {contacts.map((contact) => (
@@ -17,6 +17,11 @@ const ListContacts = props => {
               <p>{contact.name}</p>
               <p>{contact.handle}</p>
             </div>
+            <button
+                onClick={() => onDeleteContact(contact)}
+                className='contact-remove'>
+                  Remove
+            </button>
           </li>
           ))}
         </ol>
@@ -25,6 +30,7 @@ const ListContacts = props => {
 
 ListContacts.propTypes = {
   contacts: PropTypes.array.isRequired,
+  onDeleteContact: PropTypes.func,
 }
 
 export default ListContacts

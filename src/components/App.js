@@ -35,6 +35,7 @@ class App extends Component {
     };
     this.setFilteredContacts = this.setFilteredContacts.bind(this);
     this.createContact = this.createContact.bind(this);
+    this.removeContact = this.removeContact.bind(this);
   }
   
   setFilteredContacts(filteredContacts) {
@@ -45,6 +46,16 @@ class App extends Component {
     this.setState(prevState => ({
       contacts: [contact, ...prevState.contacts],
     }))
+  }
+
+  removeContact = (contact) => {
+    this.setState((prevState) => ({
+      contacts: prevState.contacts.filter((c) => {
+        return c.id !== contact.id
+      })
+    }))
+
+    // ContactsAPI.remove(contact)
   }
 
   render() {
@@ -58,8 +69,9 @@ class App extends Component {
               contacts={contacts}
               setFilteredContacts={this.setFilteredContacts} />
             <ListContacts
-                contacts={displayContacts} />
-            </>}
+                contacts={displayContacts} 
+                onDeleteContact={this.removeContact} />
+          </>}
           />        
           <Route path='/create' 
                  element={<CreateNewContact onCreateContact={this.createContact}/>}
