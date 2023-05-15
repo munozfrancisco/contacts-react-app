@@ -1,20 +1,28 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import { Link, Navigate } from 'react-router-dom'
 import ImageInput from './ImageInput'
 import serializeForm from 'form-serialize'
 
 class CreateNewContact extends Component {
+    state = { redirect: null}
+
     handleSubmit = (e) => {
         e.preventDefault()
-        const values = serializeForm(e.target, { hash: true })
+        const newContact = serializeForm(e.target, { hash: true })
 
         if (this.props.onCreateContact) {
-            this.props.onCreateContact(values)
+            this.props.onCreateContact(newContact)
+            let redirect = newContact;
+            this.setState({ redirect })
         }
     }
     render() { 
+        let { redirect } = this.state
         return (
             <div>
+                {redirect && (
+                  <Navigate to="/" replace={true} />
+                )}
                 <Link 
                   className='close-create-contact'
                   to='/'>

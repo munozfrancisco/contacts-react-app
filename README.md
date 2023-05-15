@@ -13,7 +13,7 @@ Here you will see a list of contacts of "Very Importante People" in the world of
 - [x] Implementation of "search" functionality.
 - [x] Implementation of "delete button" functionality.
 - [x] UI Form layout to add new contacts and its functionality.
-- [ ] Force navegation into "/" when new contact is submitted.
+- [x] Force navegation into "/" when new contact is submitted.
 - [x] Route SPA properly.
 
 
