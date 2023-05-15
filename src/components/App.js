@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 
 class App extends Component {
   state = {
+    // The 'contacts' array stores a list of contact objects
     contacts: [
       {
         id: 1,
@@ -29,19 +30,23 @@ class App extends Component {
         avatarURL: '/icons/person.svg'
       },
     ],
+    // The 'filteredContacts' array will store contacts filtered by search
     filteredContacts: [],
   }; 
   
+  // Updates the 'filteredContacts' array based on the search query
   setFilteredContacts = (filteredContacts) => {
     this.setState({ filteredContacts });
   }
 
+  // Adds a new contact to the 'contacts' array
   createContact = (contact) => {
     this.setState(prevState => ({
       contacts: [contact, ...prevState.contacts],
     }))
   }
 
+  // Removes a contact from the 'contacts' array
   removeContact = (contact) => {
     this.setState((prevState) => ({
       contacts: prevState.contacts.filter((c) => {
@@ -52,10 +57,12 @@ class App extends Component {
 
   render() {
     const { contacts, filteredContacts } = this.state;
+    // Determine which contacts to display based on whether there are filtered contacts or not
     const displayContacts = filteredContacts.length ? filteredContacts : contacts;
     return (
       <div className='list-contacts'>
         <Routes>
+          {/* The main page with search functionality and the list of contacts */}
           <Route exact path='/' element={<>
             <Search
               contacts={contacts}
@@ -65,6 +72,7 @@ class App extends Component {
                 onDeleteContact={this.removeContact} />
           </>}
           />        
+          {/* The page for creating a new contact */}
           <Route path='/create' 
                  element={<CreateNewContact onCreateContact={this.createContact}/>}
           />
