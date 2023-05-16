@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.4ca9b17b.css",
-    "main.js": "/static/js/main.8d3d331e.js",
-    "static/js/787.c1a504ac.chunk.js": "/static/js/787.c1a504ac.chunk.js",
-    "index.html": "/index.html",
-    "static/media/search.svg": "/static/media/search.6cccce0c1508dcdc2862.svg",
-    "static/media/cancel.svg": "/static/media/cancel.297f3c275a432e95b8b7.svg",
-    "static/media/person-add.svg": "/static/media/person-add.a77ee82021fa2fcb2c81.svg",
-    "static/media/arrow-back.svg": "/static/media/arrow-back.28f889916c64eb75d0c5.svg",
-    "static/media/person.svg": "/static/media/person.694a55cbefab296005bd.svg",
-    "main.4ca9b17b.css.map": "/static/css/main.4ca9b17b.css.map",
-    "main.8d3d331e.js.map": "/static/js/main.8d3d331e.js.map",
-    "787.c1a504ac.chunk.js.map": "/static/js/787.c1a504ac.chunk.js.map"
+    "main.css": "/contacts-react-app/static/css/main.34500de4.css",
+    "main.js": "/contacts-react-app/static/js/main.21a42519.js",
+    "static/js/787.c1a504ac.chunk.js": "/contacts-react-app/static/js/787.c1a504ac.chunk.js",
+    "index.html": "/contacts-react-app/index.html",
+    "static/media/search.svg": "/contacts-react-app/static/media/search.6cccce0c1508dcdc2862.svg",
+    "static/media/cancel.svg": "/contacts-react-app/static/media/cancel.297f3c275a432e95b8b7.svg",
+    "static/media/person-add.svg": "/contacts-react-app/static/media/person-add.a77ee82021fa2fcb2c81.svg",
+    "static/media/arrow-back.svg": "/contacts-react-app/static/media/arrow-back.28f889916c64eb75d0c5.svg",
+    "static/media/person.svg": "/contacts-react-app/static/media/person.694a55cbefab296005bd.svg",
+    "main.34500de4.css.map": "/contacts-react-app/static/css/main.34500de4.css.map",
+    "main.21a42519.js.map": "/contacts-react-app/static/js/main.21a42519.js.map",
+    "787.c1a504ac.chunk.js.map": "/contacts-react-app/static/js/787.c1a504ac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ca9b17b.css",
-    "static/js/main.8d3d331e.js"
+    "static/css/main.34500de4.css",
+    "static/js/main.21a42519.js"
   ]
 }
