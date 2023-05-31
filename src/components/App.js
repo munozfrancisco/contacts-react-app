@@ -11,7 +11,7 @@ class App extends Component {
       {
         id: 1,
         username: 'tyler',
-        name: 'Tyler McGinnis',
+        name: 'Tyler McGinnisd',
         handle: '@tylermcginnis',
         avatarURL: '/icons/person.svg'
       },
@@ -20,14 +20,14 @@ class App extends Component {
         username: "karen",
         name: 'Karen Isgrigg',
         handle: '@karen_isgrigg',
-        avatarURL: '/icons/person.svg'
+        avatarURL: './icons/person.svg'
       },
       {
         id: 3,
         username: "richard",
         name: 'Richard Kalehoff',
         handle: '@richardkalehoff',
-        avatarURL: '/icons/person.svg'
+        avatarURL: '../icons/person.svg'
       },
     ],
     // The 'filteredContacts' array will store contacts filtered by search

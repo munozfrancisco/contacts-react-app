@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, Navigate } from 'react-router-dom'
+import { NavLink, Navigate } from 'react-router-dom'
 import ImageInput from './ImageInput'
 import serializeForm from 'form-serialize'
 
@@ -26,13 +26,13 @@ class CreateNewContact extends Component {
       <div>
         {/* If redirect state is set, navigate back to the main page */}
         {redirect && (
-          <Navigate to="/" replace={true} />
+          <Navigate to="/"/>
         )}
-        <Link
+        <NavLink
           className='close-create-contact'
           to='/'>
           Close
-        </Link>
+        </NavLink>
         <form onSubmit={this.handleSubmit} className='create-contact-form'>
           {/* Component for capturing and displaying an image */}
           <ImageInput

@@ -1,5 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { ReactComponent as Logo } from '../icons/person.svg';
+
 
 const ListContacts = props => {
   // Destructure the props
@@ -15,7 +17,9 @@ const ListContacts = props => {
             style={{
               backgroundImage: `url(${contact.avatarURL})`
             }}
-          />
+          >
+            <Logo />
+          </div>
           <div className='contact-details'>
             <p>{contact.name}</p>
             <p>{contact.handle}</p>

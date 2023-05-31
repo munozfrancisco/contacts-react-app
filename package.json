@@ -1,5 +1,6 @@
 {
   "name": "contacts-react-app",
+  "homepage" : "https://munozfrancisco.github.io/contacts-react-app/",
   "version": "0.2.1",
   "private": true,
   "dependencies": {
