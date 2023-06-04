@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/contacts-react-app/static/css/main.34500de4.css",
-    "main.js": "/contacts-react-app/static/js/main.e295fece.js",
+    "main.js": "/contacts-react-app/static/js/main.bc21c1b2.js",
     "static/js/787.c1a504ac.chunk.js": "/contacts-react-app/static/js/787.c1a504ac.chunk.js",
     "index.html": "/contacts-react-app/index.html",
     "static/media/search.svg": "/contacts-react-app/static/media/search.6cccce0c1508dcdc2862.svg",
     "static/media/cancel.svg": "/contacts-react-app/static/media/cancel.297f3c275a432e95b8b7.svg",
     "static/media/person-add.svg": "/contacts-react-app/static/media/person-add.a77ee82021fa2fcb2c81.svg",
     "static/media/arrow-back.svg": "/contacts-react-app/static/media/arrow-back.28f889916c64eb75d0c5.svg",
-    "static/media/person.svg": "/contacts-react-app/static/media/person.694a55cbefab296005bd.svg",
+    "static/media/person.svg": "/contacts-react-app/static/media/person.694a55cbefab296005bd1f1472895432.svg",
     "main.34500de4.css.map": "/contacts-react-app/static/css/main.34500de4.css.map",
-    "main.e295fece.js.map": "/contacts-react-app/static/js/main.e295fece.js.map",
+    "main.bc21c1b2.js.map": "/contacts-react-app/static/js/main.bc21c1b2.js.map",
     "787.c1a504ac.chunk.js.map": "/contacts-react-app/static/js/787.c1a504ac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.34500de4.css",
-    "static/js/main.e295fece.js"
+    "static/js/main.bc21c1b2.js"
   ]
 }
